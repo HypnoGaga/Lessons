@@ -1,0 +1,35 @@
+body {
+	color: black;
+}
+
+span {
+	color: magenta;
+}
+
+li span {
+	color: red;
+}
+
+.aqua-color {
+	color: aqua;
+}
+
+a {
+	color: mediumblue;
+}
+
+p.examples {
+	color: tomato;
+}
+
+h4 {
+	color: green;
+}
+
+.advantages h4 ~ h4 {
+	color: red;
+}
+
+.testing-types + div span {
+	color: green;
+}
