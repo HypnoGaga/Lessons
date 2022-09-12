@@ -1,0 +1,107 @@
+@import url('lato-font.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@font-face {
+	font-family: 'Larsseit';
+	src:
+		url('../fonts/Larsseit_Regular.woff2') format('woff2'),
+		url('../fonts/Larsseit_Regular.woff') format('woff');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Larsseit';
+	src:
+		url('../fonts/Larsseit_Medium.woff2') format('woff2'),
+		url('../fonts/Larsseit_Medium.woff') format('woff');
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Larsseit';
+	src:
+		url('../fonts/Larsseit_Bold.woff2') format('woff2'),
+		url('../fonts/Larsseit_Bold.woff') format('woff');
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+body {
+	color: black;
+}
+.roboto {
+	font-family: 'Roboto';
+}
+h2,
+h3 {
+	color: fuchsia;
+}
+.roboto h3 + p {
+	color: crimson;
+}
+div.roboto-bold .roboto-eng,
+div.roboto-bold .roboto-ru {
+	color: green;
+}
+.roboto > * {
+	color: blue;
+}
+h3.roboto-title.black ~ * {
+	color: rgb(52, 255, 211);
+}
+#lato {
+	color: lightcoral;
+}
+.lato h3,
+.lato p {
+	font-family: 'Lato';
+}
+h3.black ~ p {
+	color: black;
+}
+.lato-black p.eng ~ p {
+	color: red;
+}
+.lato-bold > p {
+	color: blue;
+}
+.lato-bold h3 ~ .lato-title {
+	color: rgb(0, 255, 0);
+}
+header.header ol.list .item a#first {
+	color: red;
+	font-family: 'Roboto';
+}
+header.header ol.list .item ~ li a {
+	color: rgb(38, 0, 255);
+	font-family: 'Lato';
+}
+header.header ol.list .item ~ li a#third {
+	color: rgb(255, 153, 0);
+	font-family: 'Larsseit';
+}
+.footer ul li {
+	color: red;
+}
+.footer ol li {
+	color: blue;
+}
+.footer h2 {
+	color: orange;
+}
+.footer ol li ~ li {
+	color: rgb(0, 199, 156);
+}
+.larsseit {
+	font-family: 'Larsseit';
+}
+.larsseit #larsseit {
+	color: yellowgreen;
+}
+.larsseit .larsseit-regular p {
+	color: orangered;
+}
+.larsseit > div p ~ p {
+	color: rgb(197, 252, 0);
+}
