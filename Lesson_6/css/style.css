@@ -7,7 +7,7 @@ body {
 	line-height: 160%;
 }
 [class*='-body'] {
-	max-width: 810px;
+	max-width: 850px;
 	padding: 0 20px;
 	margin: 0px auto;
 }
