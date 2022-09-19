@@ -36,6 +36,8 @@ h1 {
 }
 .main-image {
 	margin-bottom: 60px;
+	border-radius: 4px;
+	overflow: hidden;
 }
 img {
 	max-width: 100%;
