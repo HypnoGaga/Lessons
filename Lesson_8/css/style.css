@@ -282,7 +282,7 @@ body {
 	cursor: pointer;
 }
 .first-last-child ul li:last-child:active {
-	background-color: 2D82B7;
+	background-color: #ce2d2da2;
 	color: #0D1317;
 	font-weight: 700;
 	text-transform: lowercase;
