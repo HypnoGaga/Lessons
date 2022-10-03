@@ -1,0 +1,10 @@
+@import url('reser.css');
+body {
+	background-color: #DB93B0;
+}
+.image:not(:last-child) {
+	margin-bottom: 50px;
+}
+.image img {
+	max-width: 100%;
+}
