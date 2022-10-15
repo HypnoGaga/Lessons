@@ -540,7 +540,7 @@ body {
 	background-color: hsl(0, 0%, 0%);
 	position: absolute;
 	right: 40px;
-	bottom: 150px;
+	bottom: 140px;
 	border-radius: 25% 29% 29% 64% / 12% 69% 23% 69%;
 	overflow: hidden;
 }
