@@ -148,11 +148,11 @@ body {
 }
 .roof-modern-car__item--16 {
 	position: absolute;
-	width: 40px;
-	top: 70px;
+	width: 42px;
+	top: 63px;
 	left: 310px;
-	border-bottom: 10px solid firebrick;
-	border-left: 45px solid transparent;
+	border-bottom: 19px solid firebrick;
+	border-left: 10px solid transparent;
 }
 .modern-car__body {
 	height: 130px;
