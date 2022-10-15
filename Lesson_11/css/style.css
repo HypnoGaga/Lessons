@@ -352,10 +352,10 @@ body {
 }
 .modern-car__door-line {
 	height: 10px;
-	width: 400px;
+	width: 692px;
 	position: absolute;
 	top: 85px;
-	left: 120px;
+	left: -12px;
 	background-color: hsl(0, 0%, 0%, 0.3);
 }
 /* CAR========================= */
