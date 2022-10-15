@@ -571,7 +571,7 @@ body {
 	left: 30px;
 	z-index: 2;
 }
-.body-car__front-lights {
+.car__front-lights {
 	width: 40px;
 	height: 60px;
 	background-color: hsl(0, 0%, 100%);
@@ -585,7 +585,7 @@ body {
 	border-left: none;
 	overflow: hidden;
 }
-.body-car__front-lights::after {
+.car__front-lights::after {
 	content: '';
 	position: absolute;
 	width: 12px;
@@ -595,7 +595,7 @@ body {
 	top: 14px;
 	left: 4px;
 }
-.body-car__front-lights::before {
+.car__front-lights::before {
 	content: '';
 	position: absolute;
 	width: 4px;
@@ -606,7 +606,7 @@ body {
 	left: 4px;
 	z-index: 4;
 }
-.body-car__maffler {
+.car__maffler {
 	width: 50px;
 	height: 20px;
 	background-color: hsl(0, 0%, 0%);
@@ -615,7 +615,7 @@ body {
 	right: 30px;
 	border-radius: 0 10px 10px 0;
 }
-.body-car__maffler::after {
+.car__maffler::after {
 	content: '';
 	display: block;
 	width: 8px;
@@ -658,7 +658,7 @@ body {
 	border-radius: 50%;
 	background-color: hsl(0, 0%, 40%);
 }
-.body-car__smoke {
+.car__smoke {
 	width: 20px;
 	height: 20px;
 	position: absolute;
@@ -741,7 +741,7 @@ body {
 		transform: rotate(-360deg);
 	}
 }
-.car__wrap:hover .body-car__front-lights {
+.car__wrap:hover .car__front-lights {
 	animation: lights 0.2s ease-in-out infinite;
 }
 .car__wrap:hover .car__rear-lights {
