@@ -21,7 +21,7 @@ body {
 /* MODERN-CAR========================= */
 .modern-car {}
 .modern-car__wrap {
-	width: 800px;
+	max-width: 800px;
 	height: 500px;
 	margin: 0px auto;
 	background-color: #d6f5e6;
@@ -787,7 +787,7 @@ body {
 /* position sticky */
 .sticky {
 	background-color: hsl(0, 0%, 100%);
-	width: 800px;
+	max-width: 800px;
 	margin: 0px auto;
 	padding: 30px;
 }
@@ -807,9 +807,8 @@ body {
 	margin-bottom: 20px;
 }
 .sticky__body {
-	width: 400px;
+	max-width: 400px;
 	margin: 0px auto;
-	position: relative;
 }
 .sticky__block {
 	font-size: 24px;
@@ -828,12 +827,13 @@ body {
 .sticky__block--2 {
 	background-color: #e9967a;
 }
-.sticky__block--3 {
+.sticky__block.sticky__block--3 {
 	background-color: #87cefa;
-	position: absolute;
+	position: fixed;
 	width: 700px;
-	top: 0;
-	left: 500px;
+	top: 80%;
+	right: -200px;
+	left: auto;
 }
 .sticky__block--4 {
 	background-color: #2f4f4f;
