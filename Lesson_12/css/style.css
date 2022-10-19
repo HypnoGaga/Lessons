@@ -972,7 +972,7 @@ body {
 }
 .body-car__door {
 	position: absolute;
-	width: 287px;
+	width: 270px;
 	height: 140px;
 	top: 193px;
 	left: 523px;
@@ -1300,8 +1300,8 @@ body {
 	content: '';
 	position: absolute;
 	top: 8px;
-	left: -32px;
-	width: 292px;
+	left: -46px;
+	width: 304px;
 	height: 100px;
 	border-radius: 0% 82% 0% 0% / 0% 16% 10% 10%;
 	border-top: 4px solid #781214;
