@@ -27,7 +27,11 @@ body {
 	transition: 0.3s;
 }
 .clock:hover {
-	box-shadow: 0 0 0 100vmax black;
+	box-shadow:
+		0px 0px 0px 4px black,
+		0px 0px 0px 40px #43456d,
+		0px 0px 0px 44px black,
+		0 0 0 100vmax black;
 }
 .clock__shadow {
 	width: 150%;
