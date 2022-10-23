@@ -121,7 +121,7 @@ body {
 	background-color: black;
 	transform-origin: center 90px;
 	transform: translate(-50%, 10px) rotate(0deg);
-	animation: rotate 21600s linear infinite;
+	animation: rotate 4320s linear infinite;
 }
 .items__seconds-hand {
 	position: absolute;
