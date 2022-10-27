@@ -38,7 +38,6 @@ body {
 	-webkit-background-clip: text;
 	color: transparent;
 	overflow: hidden;
-	box-shadow: 0px 0px 0px 20px linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
 }
 .button--outline:hover {
 	color: #ffffff;
@@ -65,8 +64,12 @@ body {
 	border-radius: 4px;
 	padding: 1px;
 	background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
-	-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-	mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+	-webkit-mask:
+		linear-gradient(#fff 0 0, #fff 0 0) content-box,
+		linear-gradient(#fff 0 0, #fff 0 0);
+	mask:
+		linear-gradient(#fff 0 0, #fff 0 0) content-box,
+		linear-gradient(#fff 0 0, #fff 0 0);
 	-webkit-mask-composite: clear;
 	mask-composite: subtract;
 }
