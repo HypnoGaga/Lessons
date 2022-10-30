@@ -230,9 +230,34 @@ body {
 /* why =================================== */
 /* ======================================= */
 .why {}
+.why__body {
+	position: relative;
+}
+.why__body::before {
+	content: '';
+	position: absolute;
+	width: 134px;
+	height: 182px;
+	top: 10.71%;
+	left: 0;
+	background: url('../img/why/decor/dots.svg') 0 0 no-repeat;
+	transform-origin: left top;
+	transform: rotate(37.54deg);
+}
+.why__body::after {
+	content: '';
+	position: absolute;
+	width: 287px;
+	height: 287px;
+	bottom: 0;
+	right: -8.6%;
+	background: url('../img/why/decor/circles.svg') 0 0 no-repeat;
+}
 .why__container {
 	display: flex;
 	justify-content: space-between;
+	position: relative;
+	z-index: 10;
 }
 .why__media {
 	flex: 0 1 705px;
