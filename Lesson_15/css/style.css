@@ -28,6 +28,7 @@ body {
 .page__main {
 	padding: 200px 0 80px;
 	background: linear-gradient(55.95deg, hsla(2, 100%, 61%, 0.2) 0%, hsla(22, 96%, 49%, 0.2) 100%);
+	overflow: hidden;
 }
 .page__why {
 	padding: 180px 0px;
