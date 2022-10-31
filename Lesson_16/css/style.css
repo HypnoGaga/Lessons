@@ -34,13 +34,13 @@ body {
 	column-gap: 20px;
 }
 .questions__media {
-	flex: 0 1 435px;
+	flex: 1 1 435px;
 	align-self: center;
 	margin-left: -15px;
 }
 .questions__image {
 	max-width: 100%;
-	min-height: 481px;
+	max-height: 481px;
 }
 .questions__content {
 	flex: 0 1 705px;
