@@ -113,7 +113,7 @@ body {
 	display: flex;
 	flex-direction: column;
 }
-.form-question__title-radio {
+.form-questions__title-radio {
 	line-height: 1.6;
 	margin-bottom: 12px;
 }
