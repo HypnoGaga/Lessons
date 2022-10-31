@@ -59,9 +59,16 @@
 									<label class='form-questions__label' for="phone">Phone</label>
 									<input class='form-questions__input' autocomplete='off' placeholder='Your phone number' name='phone' id='phone' type='tel' required>
 								</div>
-								<div class="form-questions__line">
+								<div class="form-questions__line form-questions__line--textarea">
 									<label class='form-questions__label'>Message*</label>
 									<textarea class='form-questions__textarea' autocomplete='off' name='message' placeholder='Your message'></textarea>
+								</div>
+								<div class="form-questions__line form-questions__line--radio">
+									<div class="form-question__title-radio">Gender</div>
+									<input class='form-questions__input' id='gender-01' name='gender' value='male' type='radio' required>
+									<label class='form-questions__label' for="gender-01"><span></span>Male</label>
+									<input class='form-questions__input' id='gender-02' name='gender' value='female' type='radio' required>
+									<label class='form-questions__label' for="gender-02"><span></span>Female</label>
 								</div>
 							</div>
 							<div class='form-questions__submit-block'>
