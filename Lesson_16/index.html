@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 16</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href='#' class="header__logo"><img src="img/logo.svg" alt="logo"></a>
+				<nav class="header__menu menu">
+					<ul class="menu__list">
+						<li class="menu__item"><a href="#" class="menu__link">About Us</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Courses</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Events</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Contacts</a></li>
+					</ul>
+				</nav>
+				<div class="header__actions">
+					<a href="#" class="header__button button button--large"><span>Get consultation</span></a>
+					<a href="#" class="header__login">Log in / Register</a>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__questions questions">
+				<div class="questions__container">
+					<div class="questions__media">
+						<img src="img/questions/illustration.svg" alt="illustration" class="questions__image">
+					</div>
+					<div class="questions__content">
+						<div class="questions__title-block title-block">
+							<div class="title-block__subtitle">Any questions?</div>
+							<h4 class="title-block__title">Drop us a line</h4>
+						</div>
+						<form class='questions__form form-questions' method='GET' enctype='multipart/form-data' action='#'>
+							<div class='form-questions__text-block'>
+								<div class="form-questions__line">
+									<label class='form-questions__label' for="fname">First Name*</label>
+									<input class='form-questions__input' autocomplite='off' placeholder='Your first name' name='first-name' id='fname' type='text' required>
+								</div>
+								<div class="form-questions__line">
+									<label class='form-questions__label' for="lname">Last Name*</label>
+									<input class='form-questions__input' autocomplite='off' placeholder='Your last name' name='last-name' id='lname' type='text' required>
+								</div>
+								<div class="form-questions__line">
+									<label class='form-questions__label' for="email">Email*</label>
+									<input class='form-questions__input' autocomplite='off' placeholder='Your working email' name='email' id='email' type='email' required>
+								</div>
+								<div class="form-questions__line">
+									<label class='form-questions__label' for="phone">Phone</label>
+									<input class='form-questions__input' autocomplite='off' placeholder='Your phone number' name='phone' id='phone' type='tel' required>
+								</div>
+								<div class="form-questions__line">
+									<label class='form-questions__label'>Message*</label>
+									<textarea class='form-questions__textarea' autocomplite='off' name='message' placeholder='Your message'></textarea>
+								</div>
+							</div>
+							<div class='form-questions__submit-block'>
+								<div class="form-questions__line">
+									<div class="form-questions__checkbox checkbox">
+										<input class='checkbox__input' name='communications' id='communications' type='checkbox' required>
+										<label for='communications' class='checkbox__label'>I agree to receive communications from Createx Online School</label>
+									</div>
+								</div>
+								<div class="form-questions__line">
+									<button type='submit' class='form-questions__button button button--large'><span>Send message</span></button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">footer</div>
+		</footer>
+	</div>
+</body>
+
+</html>
