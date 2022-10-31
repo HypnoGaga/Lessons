@@ -137,6 +137,8 @@ body {
 	border-radius: 50%;
 	border: 1px solid #B3B7BC;
 	position: relative;
+	align-self: flex-start;
+	transform: translateY(5px);
 }
 .form-questions__line--radio .form-questions__label span::before {
 	content: '';
