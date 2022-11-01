@@ -20,6 +20,16 @@ body {
 	margin: 0px auto;
 	padding: 0 15px;
 }
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: none;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
 /* main ======================================== */
 .page {
 	padding-top: 180px;
@@ -112,16 +122,15 @@ body {
 .form-questions__line--radio {
 	display: flex;
 	flex-direction: column;
+	position: relative;
 }
 .form-questions__title-radio {
 	line-height: 1.6;
 	margin-bottom: 12px;
 }
 .form-questions__line--radio .form-questions__input {
-	position: absolute;
-	width: 0;
-	height: 0;
-	opacity: 0;
+	bottom: 0;
+	left: 8px;
 }
 .form-questions__line--radio .form-questions__label {
 	align-self: flex-start;
@@ -199,12 +208,12 @@ body {
 	align-self: flex-start;
 }
 /* ============================================= */
-.checkbox {}
+.checkbox {
+	position: relative;
+}
 .checkbox__input {
-	position: absolute;
-	width: 0;
-	height: 0;
-	opacity: 0;
+	top: 21px;
+	left: 8px;
 }
 .checkbox__label {
 	line-height: 1.6;
