@@ -164,6 +164,9 @@ body {
 .form-questions__line--radio .form-questions__label span::before {
 	animation: checkbox-reverse 0.3s ease;
 }
+.form-questions__line--radio .form-questions__input:checked + .form-questions__label span {
+	border: 1px solid #FF3F3A;
+}
 .form-questions__line--radio .form-questions__input:checked + .form-questions__label span::before {
 	animation: checkbox 0.3s ease forwards;
 }
