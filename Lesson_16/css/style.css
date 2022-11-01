@@ -20,7 +20,7 @@ body {
 	margin: 0px auto;
 	padding: 0 15px;
 }
-.visually-hidden {
+input.visually-hidden {
 	position: absolute;
 	width: 1px;
 	height: 1px;
@@ -121,6 +121,9 @@ body {
 /* radio ================================================== */
 .form-questions__line--radio {
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 }
 .form-questions__title-radio {
 	display: inline-block;
