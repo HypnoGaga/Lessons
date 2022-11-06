@@ -763,6 +763,7 @@ body {
 		0px 12px 10px -6px rgba(154, 156, 165, 0.08),
 		0px 4px 4px -4px rgba(30, 33, 44, 0.05);
 	border-radius: 4px;
+	object-fit: contain;
 }
 .certificate__title-block:not(:last-child) {
 	margin-bottom: 48px;
@@ -812,6 +813,9 @@ body {
 	}
 	.certificate__text:not(:last-child) {
 		margin-bottom: 12px;
+	}
+	.certificate__organizations {
+		justify-content: space-around;
 	}
 	.certificate__organizations:not(:last-child) {
 		margin-bottom: 12px;
