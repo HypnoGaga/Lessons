@@ -87,9 +87,6 @@
 	-webkit-mask:
 		linear-gradient(white, white) content-box,
 		linear-gradient(white, white);
-	mask:
-		linear-gradient(white, white) content-box,
-		linear-gradient(white, white);
 	-webkit-mask-composite: clear;
 	mask-composite: subtract;
 }
