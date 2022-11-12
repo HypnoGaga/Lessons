@@ -514,6 +514,8 @@
 		linear-gradient(55.95deg,
 			hsla(2, 100%, 61%, 0.2) 0%,
 			hsla(22, 96%, 49%, 0.2) 100%);
+	position: relative;
+	overflow: hidden;
 }
 @media (max-width: 600px) {
 	.events {
@@ -713,8 +715,33 @@
 		font-size: 14px;
 	}
 }
-@media (max-width: 480px) {}
-/* ============================= */
+/* ======================================== */
+.events::before {
+	content: '';
+	position: absolute;
+	width: 159px;
+	height: 116px;
+	bottom: 166px;
+	left: 10px;
+	background: url('../img/main-block/decor/dots.svg') 0 0 / 100% no-repeat;
+	transform-origin: left bottom;
+	transform: rotate(90deg);
+}
+.events::after {
+	content: '';
+	position: absolute;
+	width: 284px;
+	height: 284px;
+	top: -133px;
+	right: -60px;
+	background: url('../img/main-block/decor/circles.svg') 0 0 no-repeat;
+}
+@media (max-width: 767.98px) {
+	.events::before,
+	.events::after {
+		display: none;
+	}
+}
 /* FOOTER ====================== */
 .footer {
 	background-image: linear-gradient(to right, #f2709c, #ff9472);
