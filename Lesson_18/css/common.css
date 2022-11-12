@@ -85,11 +85,11 @@
 	padding: 1px;
 	background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
 	-webkit-mask:
-		linear-gradient(#fff 0 0) content-box,
-		linear-gradient(#fff 0 0, #fff 0 0);
+		linear-gradient(white) content-box,
+		linear-gradient(white, white);
 	mask:
-		linear-gradient(#fff 0 0) content-box,
-		linear-gradient(#fff 0 0, #fff 0 0);
+		linear-gradient(white) content-box,
+		linear-gradient(white, white);
 	-webkit-mask-composite: clear;
 	mask-composite: subtract;
 }
