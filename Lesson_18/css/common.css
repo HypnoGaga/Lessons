@@ -83,7 +83,7 @@
 	inset: 0;
 	border-radius: 4px;
 	padding: 1px;
-	background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+	background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%) border-box;
 	-webkit-mask:
 		linear-gradient(white) content-box,
 		linear-gradient(white, white);
