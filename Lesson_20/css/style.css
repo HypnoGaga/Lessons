@@ -1082,9 +1082,221 @@ h6 {
   color: #787A80;
 }
 
+.benefits__input {
+  position: absolute;
+  left: 50%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.benefits__title-block {
+  text-align: center;
+}
+
+.benefits__title-block:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.benefits__row-item {
+  display: -ms-grid;
+  display: grid;
+  display: none;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+#tab-01:checked ~ .benefits__row-items .benefits__row-item:nth-child(1),
+#tab-02:checked ~ .benefits__row-items .benefits__row-item:nth-child(2),
+#tab-03:checked ~ .benefits__row-items .benefits__row-item:nth-child(3),
+#tab-04:checked ~ .benefits__row-items .benefits__row-item:nth-child(4) {
+  display: -ms-grid;
+  display: grid;
+}
+
+.benefits__title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.3;
+  color: #1E212C;
+  opacity: 0;
+}
+
+.benefits__title:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+#tab-01:checked ~ .benefits__row-items .benefits__row-item:nth-child(1) .benefits__title,
+#tab-02:checked ~ .benefits__row-items .benefits__row-item:nth-child(2) .benefits__title,
+#tab-03:checked ~ .benefits__row-items .benefits__row-item:nth-child(3) .benefits__title,
+#tab-04:checked ~ .benefits__row-items .benefits__row-item:nth-child(4) .benefits__title {
+  -webkit-animation: opacity-move 1s forwards;
+          animation: opacity-move 1s forwards;
+}
+
+.benefits__text {
+  font-weight: 400;
+  line-height: 1.6;
+  opacity: 0;
+}
+
+#tab-01:checked ~ .benefits__row-items .benefits__row-item:nth-child(1) .benefits__text,
+#tab-02:checked ~ .benefits__row-items .benefits__row-item:nth-child(2) .benefits__text,
+#tab-03:checked ~ .benefits__row-items .benefits__row-item:nth-child(3) .benefits__text,
+#tab-04:checked ~ .benefits__row-items .benefits__row-item:nth-child(4) .benefits__text {
+  -webkit-animation: opacity-move 1s 0.1s forwards;
+          animation: opacity-move 1s 0.1s forwards;
+}
+
+.benefits__media {
+  opacity: 0;
+  text-align: center;
+}
+
+#tab-01:checked ~ .benefits__row-items .benefits__row-item:nth-child(1) .benefits__media,
+#tab-02:checked ~ .benefits__row-items .benefits__row-item:nth-child(2) .benefits__media,
+#tab-03:checked ~ .benefits__row-items .benefits__row-item:nth-child(3) .benefits__media,
+#tab-04:checked ~ .benefits__row-items .benefits__row-item:nth-child(4) .benefits__media {
+  -webkit-animation: opacity 1s forwards;
+          animation: opacity 1s forwards;
+}
+
+.benefits__image {
+  max-width: 100%;
+  max-height: 500px;
+}
+
+.tabs-benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.tabs-benefits:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.tabs-benefits__item {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  line-height: 1.6;
+  color: #9A9CA5;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-transition: color 0.3s, border 0s;
+  -o-transition: color 0.3s, border 0s;
+  transition: color 0.3s, border 0s;
+  cursor: pointer;
+}
+
+#tab-01:checked ~ .tabs-benefits .tabs-benefits__item:nth-child(1),
+#tab-02:checked ~ .tabs-benefits .tabs-benefits__item:nth-child(2),
+#tab-03:checked ~ .tabs-benefits .tabs-benefits__item:nth-child(3),
+#tab-04:checked ~ .tabs-benefits .tabs-benefits__item:nth-child(4) {
+  border: 1px solid #FF3F3A;
+  color: red;
+  cursor: default;
+  -webkit-transition: color 0.3s, border 0.3s;
+  -o-transition: color 0.3s, border 0.3s;
+  transition: color 0.3s, border 0.3s;
+  width: 100%;
+}
+
+.tabs-benefits__icon {
+  width: 16px;
+  height: 16px;
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes opacity-move {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes opacity-move {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
 @media (min-width: 767.98px) {
   .progress__item:nth-child(4n)::after {
     display: none;
+  }
+}
+
+@media (min-width: 870px) {
+  .benefits__content {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+
+  .benefits__text {
+    max-width: 495px;
   }
 }
 
@@ -1234,6 +1446,13 @@ h6 {
   }
 }
 
+@media (max-width: 890px) {
+  .tabs-benefits {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 870px) {
   .menu__list {
     gap: 0 17px;
@@ -1306,6 +1525,15 @@ h6 {
     top: unset;
     bottom: 290px;
   }
+
+  .benefits__row-item {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .benefits__content > :first-child {
+    text-align: center;
+  }
 }
 
 @media (max-width: 870px) and (max-width: 767.98px) {
@@ -1371,7 +1599,7 @@ h6 {
     padding: 80px 0 60px;
     position: fixed;
     top: 0;
-    left: -100%;
+    left: 100%;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -1390,7 +1618,7 @@ h6 {
     content: "";
     position: fixed;
     top: 0;
-    left: -100%;
+    left: 100%;
     width: 100%;
     height: 50px;
     background-color: inherit;
@@ -1621,6 +1849,15 @@ h6 {
     padding: 18px;
     gap: 14px 0;
   }
+
+  .tabs-benefits {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .tabs-benefits__item {
+    padding: 5px;
+  }
 }
 
 @media (min-width: 20em) and (max-width: 30em) {
@@ -1761,5 +1998,9 @@ h6 {
     -webkit-transform: scale(1.03);
         -ms-transform: scale(1.03);
             transform: scale(1.03);
+  }
+
+  .tabs-benefits__item:hover {
+    color: #424551;
   }
 }
