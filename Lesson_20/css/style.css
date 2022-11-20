@@ -17,6 +17,7 @@ html,
 body {
   height: 100%;
   min-width: 320px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -566,11 +567,26 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px 20px;
 }
 
 .content-footer__socials:not(:last-child) {
   margin-bottom: 24px;
+}
+
+.content-footer__link svg {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  color: hsl(230deg, 3%, 66%);
+  width: 24px;
+  height: 24px;
+}
+
+.content-footer__link:hover svg {
+  color: hsl(0deg, 0%, 100%);
 }
 
 .navigation-footer-content {
@@ -2880,7 +2896,6 @@ h6 {
     -ms-flex-item-align: stretch;
         -ms-grid-row-align: stretch;
         align-self: stretch;
-    margin-bottom: -125px;
   }
 
   .certificate__media {
@@ -3147,10 +3162,6 @@ h6 {
     margin-bottom: 22px;
   }
 
-  .certificate__column {
-    margin-bottom: -70px;
-  }
-
   .block-gray {
     padding: 60px 0 50px;
   }
@@ -3405,10 +3416,6 @@ h6 {
 
   .certificate__title-block:not(:last-child) {
     margin-bottom: 20px;
-  }
-
-  .certificate__column {
-    margin-bottom: 0px;
   }
 
   .block-gray {
@@ -3728,6 +3735,10 @@ h6 {
   }
 
   .navigation-footer-content__link:hover {
+    text-decoration: underline;
+  }
+
+  .copy-footer__link:hover {
     text-decoration: underline;
   }
 
