@@ -1933,9 +1933,7 @@ h6 {
 }
 
 .navigation-our-team__button.swiper-button-disabled {
-  opacity: 0.5;
-  background-color: transparent;
-  cursor: default;
+  pointer-events: none;
 }
 
 .navigation-our-team__nav-icon {
@@ -1947,8 +1945,8 @@ h6 {
   transition: 0.3s;
 }
 
-.navigation-our-team__button.swiper-button-disabled .navigation-our-team__nav-icon {
-  color: hsl(228deg, 10%, 29%);
+.swiper-button-disabled .navigation-our-team__nav-icon {
+  opacity: 0.5;
 }
 
 .navigation-our-team__nav-icon--right {
@@ -2126,9 +2124,7 @@ h6 {
 }
 
 .slider-testimonials__button.swiper-button-disabled {
-  opacity: 0.5;
-  background-color: transparent;
-  cursor: default;
+  pointer-events: none;
 }
 
 .slider-testimonials__nav-icon {
@@ -2140,8 +2136,8 @@ h6 {
   transition: 0.3s;
 }
 
-.slider-testimonials__button.swiper-button-disabled .slider-testimonials__nav-icon {
-  color: hsl(228deg, 10%, 29%);
+.swiper-button-disabled .slider-testimonials__nav-icon {
+  opacity: 0.5;
 }
 
 .slider-testimonials__nav-icon--right {
