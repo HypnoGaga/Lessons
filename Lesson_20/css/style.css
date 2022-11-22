@@ -622,6 +622,32 @@ h6 {
   color: #a5a6ab;
 }
 
+.navigation-footer-content__link--tel,
+.navigation-footer-content__link--email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation-footer-content__link--tel::before,
+.navigation-footer-content__link--email::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+}
+
+.navigation-footer-content__link--tel::before {
+  background: url("../img/footer/icons/phone.svg") 0 0 no-repeat;
+}
+
+.navigation-footer-content__link--email::before {
+  background: url("../img/footer/icons/mail.svg") 0 0 no-repeat;
+}
+
 .newsletter-footer-content__title {
   font-weight: 700;
   line-height: 1.5;
@@ -3447,7 +3473,7 @@ h6 {
   }
 
   .latest-posts__header {
-    gap: 10px;
+    gap: 10fr;
   }
 
   .latest-posts__button {
