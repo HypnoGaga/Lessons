@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson_22</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="lessons">
+			<div class="lessons__items">
+				<div class="lessons__item item-lessons">
+					<h2 class="item-lessons__title"><mark>Задание №1</mark> <br> Структура кода. Инструкции. Режим 'use strict'</h2>
+					<div class="item-lessons__media">
+						<img src="img/01.png" alt="" class="item-lessons__image">
+					</div>
+					<ol class="item-lessons__list">
+						<li class="item-lessons__item"><span class='good'>Все ок.</span></li>
+						<li class="item-lessons__item"><span class='good'>Все ок.</span></li>
+						<li class="item-lessons__item"><span class='error'>Вызовет ошибку.</span> Нужно разделить выражения при помощи <span>";"</span> или перенести второе выражение на новую строку</li>
+						<li class="item-lessons__item"><span class='error'>Вызовет ошибку.</span> Пропущена закрывающая ковычка после слова <span>Учим</span></li>
+					</ol>
+				</div>
+				<div class="lessons__item item-lessons">
+					<h2 class="item-lessons__title"><mark>Задание №2</mark> <br> Переменные. Константы</h2>
+					<div class="item-lessons__media">
+						<img src="img/02.png" alt="" class="item-lessons__image">
+					</div>
+					<ol class="item-lessons__list">
+						<li class="item-lessons__item"><span class='error'>Вызовет ошибку.</span> После первого выражения не хватает точки с запятой, или перенести второе выражение на новую строку</li>
+						<li class="item-lessons__item"><span class='better'>Ошибку не вызовет.</span> Но второе слово стоит записать с заглавной <span>myAge</span></li>
+						<li class="item-lessons__item"><span class='better'>Ошибку не вызовет.</span> Но в данном случае константе присваивается значение, которое вычисляется в процессе выполнения программы, поэтому ее стоит записать так - <span>blockSize</span></li>
+						<li class="item-lessons__item"><span class='good'>Все ок.</span></li>
+						<li class="item-lessons__item"><span class='good'>Все ок.</span> Если переменная объявлена при помощи <span>var</span>, тогда она видна за пределами блока <span>if</span></li>
+					</ol>
+				</div>
+				<div class="lessons__item item-lessons">
+					<h2 class="item-lessons__title"><mark>Задание №3</mark> <br> Типы данных. Null String и др.</h2>
+					<div class="item-lessons__media">
+						<img src="img/03.png" alt="" class="item-lessons__image">
+					</div>
+					<ol class="item-lessons__list">
+						<li class="item-lessons__item"><span class='better'>Ошибку не вызовет.</span> Однако если целью является встраивание в строку переменной, тогда нужно использовать обратные кавычки</li>
+						<li class="item-lessons__item"><span class='error'>Неверно.</span> При делении на 0 значение переменной будет равно <span>infinity</span>, а тип данных <span>number</span></li>
+						<li class="item-lessons__item"><span class='error'>Неверно.</span> Переменная которая объявлена но ей не присвоено значение имеет тип <span>undefined</span></li>
+						<li class="item-lessons__item"><span class='good'>Верно.</span></li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
