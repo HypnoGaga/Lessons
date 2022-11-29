@@ -79,7 +79,7 @@ let userInfo = "Фрилансер ${userAge}";
 
 Вариант №2
 let userHeight = 145 / 0;
-Вернется тип данных NaN
+Вернется значение NaN
 console.log(userHeight);
 
 Вариант №3
@@ -89,6 +89,6 @@ console.log(typeof userName);
 
 Вариант №4
 let userSize = "45" / "8";
-Вернется тип данных Nubmer
+Вернется тип данных Number
 console.log(typeof userSize);
  */
