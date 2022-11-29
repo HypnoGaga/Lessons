@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson_23</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="lessons">
+			<div class="lessons__items">
+				<div class="lessons__item item-lessons">
+					<h2 class="item-lessons__title"><mark>Задание №1</mark> <br> Операторы javascript "2"+2=22</h2>
+					<div class="item-lessons__media">
+						<img src="img/01.png" alt="" class="item-lessons__image">
+					</div>
+					<ol class="item-lessons__list">
+						<li class="item-lessons__item"><span class='error'>Неверно.</span> Сначала строка <span>"22"</span> конвертируется в число <span>-22</span>, затем идет сложение строки и числа. Получим строку <span>32-22</span></li>
+						<li class="item-lessons__item"><span class='good'>Верно.</span> Оператор <span>умножить</span> конвертирует значения в числа</li>
+						<li class="item-lessons__item"><span class='error'>Вызовет ошибку.</span> Оператор <span>инкремент</span> и <span>декремент</span> можно применять только к переменным</li>
+						<li class="item-lessons__item"><span class='error'>Неверно.</span> Сначала значение переменной <span>userCounter</span> присвоится переменной <span>newUser</span>, и после значение переменной <span>userCounter</span> увеличится на единицу. Поэтому значение переменной <span>newUser</span> будет равно <span>0</span></li>
+						<li class="item-lessons__item"><span class='error'>Неверно.</span> Шаг 1 - <mark>!false && 11</mark> вернет <span>11</span> потому что оба значения <span>true</span>. Шаг 2 - <mark>18 && !''</mark> вернет <span>true</span>, потому что оба значения <span>true</span>. Шаг 3 - <mark>11 || true</mark> вернет первое значение, потому что <span>11</span> это <span>true</span>. Ответ - вернется значение <span>11</span></li>
+						<li class="item-lessons__item">Вернется 0, потому что первый аргумент не <span>null</span> и не <span>undefind</span>
+					</ol>
+				</div>
+				<div class="lessons__item item-lessons">
+					<h2 class="item-lessons__title"><mark>Задание №2</mark> <br> IF ELSE. Условный оператор "?"</h2>
+					<div class="item-lessons__media">
+						<img src="img/02.png" alt="" class="item-lessons__image">
+					</div>
+					<ol class="item-lessons__list">
+						<li class="item-lessons__item"><span class='error'>Вернет ложь!</span> Оператор <span>строгого равенства</span>, значит число 1 не будет равно строке "1", условие будет равно <span>false</span> и выполнится код в блоке <span>else</span></li>
+						<li class="item-lessons__item"><span class='good'>Вернет истина!</span> Оператор <span>нестрогого равенства</span> приводит строку в число, поэтому условие будет равно <span>true</span> и в консоль выведется <span>Истина!</span></li>
+						<li class="item-lessons__item"><span class='good'>Вернет истина!</span> <span>92 > '11' = true</span> | <span>58 < 100 = true</span> | <span>true && true = последнему true</span>. Условие в скобках равно <span>true</span> значит выведется 'Истина!'</li>
+						<li class="item-lessons__item"><span class='good'>Вернет истина!</span> <span>Ноль</span> это <span>false</span>, поэтому выполнится код в блоке <span>else</span></li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
